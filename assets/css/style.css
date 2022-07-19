@@ -1,0 +1,72 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+/* font family
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font family */
+
+/* common css start */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+}
+.w-100{
+    width: 100%;
+}
+/* common css end */
+/* header section start */
+.container{
+     width: 80%;
+     margin: 0px auto;    
+}
+.header-container{
+    height: 90vh;
+    background-color: rgb(39, 34, 34);
+    border-radius: 20px;
+    margin: 40px 0; 
+    color: white;
+    display: flex;
+}
+.header-description{
+    display: flex;
+    flex-direction: column;
+}
+.header-title{
+    font-size: 35px;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 70px;
+}
+.header-text{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-btn button{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 10px 25px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    
+}
+.header-image img{
+    height: 100%;
+    width: 100%;
+}
+/* header section end */
