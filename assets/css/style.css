@@ -60,8 +60,10 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 18px;
     border: none;   
 }
-.header-image img{
-    height: 100%;
-    width: 100%;
+.header-image{
+    background-image: url(../image/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px 40px 0px 40px;
 }
 /* header section end */
