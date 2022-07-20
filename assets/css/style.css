@@ -162,7 +162,7 @@ aside #match{
 }
 .match{
     border-radius: 8px;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgba(128, 128, 128, 0.5);
     box-shadow: 5px 5px 5px whitesmoke;
 }
 .thumbnil {
