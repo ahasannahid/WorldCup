@@ -18,9 +18,6 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0px;
     padding: 0px;
 }
-.w-100{
-    width: 100%;
-}
 /* common css end */
 /* header section start */
 .container{
@@ -28,12 +25,13 @@ h1, h2, h3, h4, h5, h6, p{
      margin: 0px auto;    
 }
 .header-container{
-    height: 90vh;
+    /* height: 90vh; */
     background-color: #161616;
     border-radius: 20px;
     margin: 40px 0; 
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .header-title{
     font-size: 35px;
@@ -64,7 +62,7 @@ h1, h2, h3, h4, h5, h6, p{
     display: block;
     width: 90%;
     height: 95%;
-    margin: 24px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
     padding-right: 10px;
 }
 /* header section end */
@@ -88,9 +86,10 @@ h1, h2, h3, h4, h5, h6, p{
     text-decoration: none;
     padding: 20px;
     margin: 15px 20px;
-    background-color: azure;
+    background-color: white;
     text-align: center;
     font-weight: bold;
+    border: 1px solid rgba(128, 128, 128, 0.6);
 }
 aside #blog{
     background-color: red;
@@ -198,7 +197,6 @@ aside #match{
 /* footer start */
 .footer{
     margin-top: 110px;
-    height: 350px;
     background-color: #161616;
 }
 .footer .container h2{
@@ -231,8 +229,112 @@ aside #match{
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 50px;
 }
 .fa{
     color: white;
 }
 /* footer end */
+/* media query start */
+/* mobile view start */
+@media screen and (max-width:576px){
+    /* index file start */
+    .header-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center ;
+    }
+    .header-image img{
+        height: 93%;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+    .header-title{
+        font-size: 20px;
+        margin-top: 40px;
+        padding-right: 20px;
+        text-align: center; 
+        font-family: 'Roboto', sans-serif;
+        line-height: 50px;
+    }
+    .header-text{
+        text-align: center;
+        padding-right: 20px;
+    }
+    .header-text span{
+        display: none;
+    }
+    .header-btn button{
+        margin-left: 140px; 
+    }
+    .main{
+        flex-direction: column;
+    }
+    .main aside{
+        width: 80%;
+        margin: auto;
+        background-color: white;
+    }
+    .main .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .blog{
+        width: 100%;
+    }
+    .footer .about-us{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    /* index file end */
+    .main .matches{
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    /* .match{
+        border-radius: 8px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        box-shadow: 5px 5px 5px whitesmoke;
+    } */
+    /* .thumbnil {
+        display: flex;
+    } */
+    /* .thumbnil img{
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    } */
+    /* .thumbnil p{
+        padding-left: 10px;
+        padding-right: 10px; 
+        margin-top: 45px;
+    } */
+    /* .match .team{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 15px;
+        text-align: center;
+    } */
+    /* .time p{
+       text-align: center;
+       margin-top: 20px;
+       padding-bottom: 50px;
+    } */
+}
+/* mobile view end */
+/* media query end */
