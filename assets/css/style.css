@@ -58,6 +58,12 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 18px;
     border: none;   
 }
+.header-btn button:hover{
+    transition: 1s;
+    background-color: #fff;
+    color: #7b6dca; 
+}
+
 .header-image img{
     display: block;
     width: 90%;
@@ -195,6 +201,20 @@ aside #match{
 }
 /* main section upcoming match end */
 /* main section end */
+/* view all start */
+.view-all{
+    text-align: center;
+    margin-top: 50px; 
+}
+.view-all button{
+    background-color: blueviolet;
+    padding: 15px 35px;
+    border-radius: 15px;
+    border: none;
+    color: wheat;
+    font-weight: bold;
+    display: none;
+}
 /* footer start */
 .footer{
     margin-top: 110px;
@@ -307,6 +327,25 @@ aside #match{
 /* mobile view end */
 @media screen and (min-width:481px) and (max-width: 870px) {
     /* tablet view start */
+    .header-image img{
+        height: 93%;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+    .header-title{
+        font-size: 20px;
+        margin-top: 40px;
+        padding-right: 20px;
+        text-align: center; 
+        font-family: 'Roboto', sans-serif;
+        line-height: 50px;
+    }
+    .header-text{
+        text-align: center;
+        padding-right: 20px;
+    }
 .main{
     flex-direction: column;
 }
@@ -327,6 +366,11 @@ aside #match{
     margin: auto;
     margin-top: 20px;
     width: 100%;
+}
+.view-all button{
+    display: block;
+    text-align: center;
+    margin-left: 45%;
 }
 .footer .about-us{
     justify-content: space-evenly;
