@@ -149,6 +149,51 @@ aside #blog{
     margin-top: 20px;
     margin-left: 10px;
 }
+/* main section upcoming match start */
+aside #match{
+    background-color: red;
+    color: white;
+}
+.main .matches{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.match{
+    border-radius: 8px;
+    border: 1px solid whitesmoke;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+.thumbnil {
+    display: flex;
+}
+.thumbnil img{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.thumbnil p{
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-top: 45px;
+}
+.match .team{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 15px;
+    text-align: center;
+}
+.time p{
+   text-align: center;
+   margin-top: 20px;
+   padding-bottom: 50px;
+}
+/* main section upcoming match end */
 /* main section end */
 /* footer start */
 .footer{
