@@ -277,6 +277,7 @@ aside #match{
         width: 80%;
         margin: auto;
         background-color: white;
+        padding-bottom: 250px;
     }
     .main .blogs{
         display: grid;
